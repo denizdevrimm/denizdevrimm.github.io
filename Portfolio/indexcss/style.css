@@ -1,0 +1,498 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html,body{
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    background: rgb(21,24,24);
+    background: linear-gradient(0deg, rgba(21,24,24,0.8407738095238095) 0%, rgba(21,24,24,0.6306897759103641) 8%, rgba(21,24,24,0.4206057422969187) 50%, rgba(21,24,24,0.7343312324929971) 92%, rgba(21,24,24,0.7651435574229692) 100%);
+}
+
+    .border{border: 2px solid black;}
+
+/* HEADER START */
+.header{
+    width: 100%;
+    height: 8vh;
+    border-bottom: 1px solid black;
+}
+.header .navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(241,241,241);
+    background: linear-gradient(270deg, rgba(241,241,241,0) 80%, rgba(20,42,42,0.7651435574229692) 100%);
+}
+.header .navbar .logo-con{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2%;
+}
+.header .navbar .logo-con .logo-div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+}
+.header .navbar .logo-con h2{
+    margin-left: 5%;
+    text-shadow: 0px 0px 10px grey;
+}
+.header .navbar .logo-con h5{
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+.header .navbar .text-con{
+    width: 40%;
+}
+.header .navbar .menu{
+    width: 60px;
+    height: 55px;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    top: 2px;
+    box-shadow: inset 0px 0px 10px 20px grey;
+    border: 1px solid grey;
+    display: none;
+}
+.header .navbar .nav-list2{
+    width: 80px;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 8.2%;
+    right: 10px;
+    list-style: none;
+    padding: 10px;
+    display: none;
+    border: none;
+    box-shadow: inset 0px 0px 10px 20px grey;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.header .navbar .text-con .nav-link2{
+    text-decoration: none;
+    color: black;
+}
+.header .navbar .text-con .nav-link2>li{
+    margin-top: 3%;
+}
+.header .navbar .text-con .nav-link2:hover{
+    color: white;
+}
+.header .navbar .text-con .nav-list{
+    list-style: none;
+    display: flex;
+    padding-left: 30%;
+}
+.header .navbar .text-con .nav-list .link-line{
+    border: 1px solid grey;
+    margin-left: 5%;
+}
+.header .navbar .text-con .nav-link{
+    text-decoration: none;
+    margin-left: 5%;
+    color: black;
+}
+.header .navbar .text-con .nav-link:hover{
+    color: white;
+    position: relative;
+}
+.header .navbar .text-con .nav-link:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+/* HEADER END */
+
+
+/* MAIN START */
+.main-con{
+    width: 70%;
+    height: 60vh;
+    margin: 7% auto;
+    display: flex;
+}
+.main-con .photo-con{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    left: -65%;
+    animation: photo 2.5s both;
+}
+@keyframes photo {
+    100% {
+        transform: translateX(162.5%);
+    }
+}
+
+.main-con .text-con{
+    width: 60%;
+    height: 100%;
+    padding: 0px 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.main-con .text-con .heading{
+    width: 50%;
+    height: 20%;
+    font-family: 'Alkatra', cursive;
+    font-size: 2em;
+    position: relative;
+    right: -145%;
+    animation: heading 2s both;
+}
+@keyframes heading {
+    100% {
+        transform: translateX(-290%);
+    }
+}
+.main-con .text-con .text{
+    width: 100%;
+    height: 40%;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    right: -150%;
+    animation: text 2.5s both;
+}
+@keyframes text {
+    100% {
+        transform: translateX(-150%);
+    }
+}
+.main-con .text-con .circles{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8em;
+}
+.main-con .text-con .circles .circle1{
+    width: 25%;
+    height: 90%;
+    background: rgb(108,104,110);
+    background: radial-gradient(circle, rgba(108,104,110,0) 39%, rgba(20,42,42,0.7651435574229692) 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -180%;
+    animation: circle1 3s both;
+}
+@keyframes circle1 {
+    100% {
+        transform: translateX(-720%);
+    }
+}
+.main-con .text-con .circles .circle1:hover{
+    background: lightblue;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 50px 30px grey;
+}
+.main-con .text-con .circles .circle1:hover .circle-link{
+    color: black;
+}
+.main-con .text-con .circles .circle2{
+    width: 25%;
+    height: 90%;
+    background: rgb(108,104,110);
+    background: radial-gradient(circle, rgba(108,104,110,0) 39%, rgba(20,42,42,0.7651435574229692) 100%);    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    position: relative;
+    right: -250%;
+    animation: circle2 2.5s both;
+}
+@keyframes circle2 {
+    100% {
+        transform: translateX(-1000%);
+    }
+}
+.main-con .text-con .circles .circle2:hover{
+    background: lightblue;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 50px 30px grey;
+}
+.main-con .text-con .circles .circle2:hover .circle-link{
+    color: black;
+}
+.main-con .text-con .circles .circle3{
+    width: 25%;
+    height: 90%;
+    background: rgb(108,104,110);
+    background: radial-gradient(circle, rgba(108,104,110,0) 39%, rgba(20,42,42,0.7651435574229692) 100%);    
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    position: relative;
+    right: -130%;
+    animation: circle3 2s both;
+}
+@keyframes circle3 {
+    100% {
+        transform: translateX(-520%);
+    }
+}
+.main-con .text-con .circles .circle3:hover{
+    background: lightblue;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 50px 30px grey;
+}
+.main-con .text-con .circles .circle3:hover .circle-link{
+    color: black;
+}
+.main-con .text-con .circles .circle-link{
+    text-decoration: none;
+    color: white;
+}
+/* MAIN END */
+
+
+/* FOOTER START */
+
+.footer{
+    width: 100%;
+    height: 20vh;
+    padding: 0px 5%;
+    margin: 0px auto;
+    background: rgb(241,241,241);
+    background: linear-gradient(90deg, rgba(241,241,241,0) 80%, rgba(20,42,42,0.7651435574229692) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .phone{
+    width: 15%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 2%;
+}
+.footer .phone .phonediv{
+    display: flex;
+    align-items: center;
+}
+.footer .mail{
+    width: 15%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 2%;
+}
+.footer .mail .maildiv{
+    display: flex;
+    align-items: center;
+}
+.footer .social{
+    width: 15%;
+    height: 50%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 2%;
+}
+.footer .social .follow-con{
+    display: flex;
+    align-items: center;
+}
+.footer .social .social-con{
+    width: 75%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .copyright{
+    width: 15%;
+    height: 45%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* FOOTER END */
+
+@media screen and (max-width:1200px) {
+    /* HEADER START */
+    .header .navbar .logo-con{
+        width: 40%;
+    }
+    .header .navbar .text-con{
+        width: 45%;
+    }
+    /* HEADER END */
+
+    /* MAIN START */
+    .main-con img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 15%;
+    }
+    .main-con .text-con .circles .circle1{
+        width: 33%;
+        right: -230%;
+    }
+    .main-con .text-con .circles .circle2{
+        width: 33%;
+        right: -320%;
+    }
+    .main-con .text-con .circles .circle3{
+        width: 33%;
+        right: -167%;
+    }
+    /* MAIN END */
+
+    /* FOOTER START */
+    .footer .phone{
+        width: 20%;
+    }
+    .footer .mail{
+        margin-left: -5%;
+    }
+    .footer .social{
+        margin-left: 7%;
+    }
+    .footer .follow-con{
+        margin-top: 6%;
+    }
+    .footer .social .social-con{
+        margin-top: 5%;
+    }
+    .footer .copyright{
+        width: 17%;
+    }
+    /* FOOTER END */
+}
+@media screen and (max-width:992px) {
+    /* HEADER START */
+    .header .navbar .logo-con{
+        width: 45%;
+    }
+    .header .navbar .text-con{
+        width: 55%;
+    }
+    .header .nav-list{
+        margin-left: -4%;
+    }
+    /* HEADER END */
+
+    /* MAIN START */
+    .main-con img{
+        height: 80%;
+        width: 100%;
+        position: absolute;
+        top: 20%;
+    }
+    .main-con .text-con .circles .circle1{
+        height: 70%;
+        font-size: 0.8em;
+        margin-top: -5%;
+    }
+    .main-con .text-con .circles .circle2{
+        height: 70%;
+        font-size: 0.8em;
+        margin-top: -5%;
+    }
+    .main-con .text-con .circles .circle3{
+        height: 70%;
+        font-size: 0.8em;
+        margin-top: -5%;
+    }
+    /* MAIN END */
+
+    /* FOOTER START */
+    .footer .phone{
+        width: 20%;
+    }
+    .footer .mail{
+        margin-left: -5%;
+    }
+    .footer .social{
+        margin-left: 7%;
+    }
+    .footer .follow-con{
+        margin-top: 10%;
+    }
+    .footer .social .social-con{
+        margin-top: 12%;
+        
+    }
+    .footer .copyright{
+        width: 20%;
+    }
+    /* FOOTER END */
+}
+@media screen and (max-width:768px) {
+    /* HEADER START */
+    .header .navbar .logo-con{
+        width: 50%;
+    }
+    .header .navbar .text-con .nav-list{
+        display: none;
+    }
+    .header .navbar .menu{
+        display: block;
+    }
+    .header .navbar .menu:hover + .nav-list2{
+        display: block;
+    }
+
+    /* HEADER END */
+
+
+
+    /* FOOTER START */
+    .footer {
+        font-size: 0.8em;
+    }
+    .footer .phone{
+        width: 20%;
+    }
+    .footer .mail p{
+        margin-top: -10%;
+    }
+    .footer .social{
+        margin-left: 7%;
+    }
+    .footer .follow-con{
+        margin-top: 15%;
+    }
+    .footer .social .social-con{
+        margin-top: 8%;
+    }
+    /* FOOTER END */
+}

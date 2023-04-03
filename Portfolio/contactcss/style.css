@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html,body{
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(21,24,24);
+    background: linear-gradient(0deg, rgba(21,24,24,0.8407738095238095) 0%, rgba(21,24,24,0.6306897759103641) 8%, rgba(21,24,24,0.4206057422969187) 50%, rgba(21,24,24,0.7343312324929971) 92%, rgba(21,24,24,0.7651435574229692) 100%);
+}
+
+    .border{border: 2px solid black;}
+
+/* HEADER START */
+.header{
+    width: 100%;
+    height: 8vh;
+    border-bottom: 1px solid black;
+}
+.header .navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(241,241,241);
+    background: linear-gradient(270deg, rgba(241,241,241,0) 80%, rgba(20,42,42,0.7651435574229692) 100%);
+}
+.header .navbar .logo-con{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2%;
+}
+.header .navbar .logo-con .logo-div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+}
+.header .navbar .logo-con h2{
+    margin-left: 5%;
+    text-shadow: 0px 0px 10px grey;
+}
+.header .navbar .logo-con h5{
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+.header .navbar .text-con{
+    width: 40%;
+}
+.header .navbar .text-con .nav-list{
+    list-style: none;
+    display: flex;
+    padding-left: 30%;
+}
+.header .navbar .text-con .nav-list .link-line{
+    border: 1px solid grey;
+    margin-left: 5%;
+}
+.header .navbar .text-con .nav-link{
+    text-decoration: none;
+    margin-left: 5%;
+    color: black;
+}
+.header .navbar .text-con .nav-link:hover{
+    color: white;
+    position: relative;
+}
+.header .navbar .text-con .nav-link:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+/* HEADER END */
+
+/* MAIN START */
+
+.contact-con{
+    width: 70%;
+    height: 70vh;
+    margin: 7% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-con .con1{
+    width: 35%;
+    height: 100%
+}
+.contact-con .con2{
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+.contact-con .name-div{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-con .first-name-div{
+    width: 50%;
+}
+.contact-con .last-name-div{
+    width: 50%;
+}
+.contact-con .name-div .first-name-div>input{
+    width: 90%;
+    height: 30px;
+    margin-top: 5%;
+    padding: 10px;
+    background: none;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 0px 0px 15px 1px darkslategray;
+    border: 1px solid black;
+    color: black;
+}
+.contact-con .name-div .first-name-div>input::placeholder{
+    color: rgba(255, 255, 255, 0.61);
+}
+.contact-con .name-div .last-name-div>input{
+    width: 90%;
+    height: 30px;
+    margin-top: 5%;
+    padding: 10px;
+    background: none;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 0px 0px 15px 1px darkslategray;
+    border: 1px solid black;
+    color: black;
+}
+.contact-con .name-div .last-name-div>input::placeholder{
+    color: rgba(255, 255, 255, 0.61);
+}
+.con2>form>input{
+    width: 95%;
+    height: 30px;
+    margin-top: 2%;
+    padding: 10px;
+    background: none;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 15px 1px darkslategray;
+    border: 1px solid black;
+    color: black;
+}
+.con2>form>input::placeholder{
+    color: rgba(255, 255, 255, 0.61);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.con2>form>textarea{
+    padding: 10px;
+    background: none;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 15px 1px darkslategray;
+    border: 1px solid black;
+    color: black;
+}
+.con2>form>textarea::placeholder{
+    color: rgba(255, 255, 255, 0.61);
+    font-family: 'Courier New', Courier, monospace;
+}
+.con2>form>:nth-last-child(1) {
+    position: absolute;
+    width: 25%;
+    height: 18%;
+    border-radius: 50%;
+    right: 25px;
+    bottom: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.con2>form>:nth-last-child(1):hover{
+    box-shadow: inset 0px 0px 40px 10px rgba(255, 255, 255, 0.315);
+    cursor: pointer;
+    color: black;
+    font-weight: 550;
+}
+
+/* MAIN END */
+
+/* FOOTER START */
+
+.footer{
+    width: 100%;
+    height: 20vh;
+    padding: 0px 5%;
+    margin: 0px auto;
+    background: rgb(241,241,241);
+    background: linear-gradient(90deg, rgba(241,241,241,0) 80%, rgba(20,42,42,0.7651435574229692) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .phone{
+    width: 15%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 2%;
+}
+.footer .phone .phonediv{
+    display: flex;
+    align-items: center;
+}
+.footer .mail{
+    width: 15%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 2%;
+}
+.footer .mail .maildiv{
+    display: flex;
+    align-items: center;
+}
+.footer .social{
+    width: 15%;
+    height: 50%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 2%;
+}
+.footer .social .follow-con{
+    display: flex;
+    align-items: center;
+}
+.footer .social .social-con{
+    width: 75%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .copyright{
+    width: 15%;
+    height: 45%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* FOOTER END */
+
+@media screen and (max-width:1400px){
+    .con2>form>:nth-last-child(1) {
+        top: 90%;
+        right: 75%;
+    }
+}
+@media screen and (max-width:1200px) {
+    /* HEADER START */
+
+    .header .navbar .logo-con{
+        width: 40%;
+    }
+    .header .navbar .text-con{
+        width: 45%;
+    }
+
+    /* HEADER END */
+
+    /* MAIN START */
+
+    .con2>form>:nth-last-child(1) {
+        top: 88%;
+        right: 75%;
+    }
+
+    /* MAIN END */
+
+    /* FOOTER START */
+    .footer .phone{
+        width: 20%;
+    }
+    .footer .mail{
+        margin-left: -5%;
+    }
+    .footer .social{
+        margin-left: 7%;
+    }
+    .footer .follow-con{
+        margin-top: 6%;
+    }
+    .footer .social .social-con{
+        margin-top: 5%;
+    }
+    .footer .copyright{
+        width: 17%;
+    }
+    /* FOOTER END */
+}
+@media screen and (max-width:992px) {
+    /* HEADER START */
+    .header .navbar .logo-con{
+        width: 45%;
+    }
+    .header .navbar .text-con{
+        width: 55%;
+    }
+    .header .nav-list{
+        margin-left: -4%;
+    }
+    /* HEADER END */
+
+    /* MAIN START */
+
+    .con2>form>:nth-last-child(1) {
+        width: 30%;
+        right: 70%;
+        top: 87%;
+    }
+
+    /* MAIN END */
+
+    /* FOOTER START */
+    .footer .phone{
+        width: 20%;
+    }
+    .footer .mail{
+        margin-left: -5%;
+    }
+    .footer .social{
+        margin-left: 7%;
+    }
+    .footer .follow-con{
+        margin-top: 10%;
+    }
+    .footer .social .social-con{
+        margin-top: 12%;
+        
+    }
+    .footer .copyright{
+        width: 20%;
+    }
+    /* FOOTER END */
+}
+@media screen and (max-width:768px) {
+    /* HEADER START */
+    .header .navbar .logo-con{
+        width: 50%;
+    }
+    .header .navbar .text-con{
+        width: 50%;
+    }
+    .header .nav-list{
+        margin-left: -20%;
+    }
+    
+
+    /* HEADER END */
+
+    /* MAIN START */
+    
+    .con2>form>:nth-last-child(1) {
+        width: 40%;
+        right: 60%;
+    }
+
+    /* MAIN END */
+
+    /* FOOTER START */
+    .footer {
+        font-size: 0.8em;
+    }
+    .footer .phone{
+        width: 20%;
+    }
+    .footer .mail p{
+        margin-top: -10%;
+    }
+    .footer .social{
+        margin-left: 7%;
+    }
+    .footer .follow-con{
+        margin-top: 15%;
+    }
+    .footer .social .social-con{
+        margin-top: 8%;
+    }
+    /* FOOTER END */
+}
