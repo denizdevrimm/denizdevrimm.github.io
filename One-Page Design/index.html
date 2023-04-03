@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header&Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html,body{
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* HEADER START */
+        
+        .header{
+            width: 100%;
+        }
+        .header .header-nav{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            background: rgb(29, 29, 66);
+        }
+        .header .logo{
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .header .logo h2{
+            color: white;
+        }
+        .header .nav-list{
+            height: 100%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -50px;
+        }
+        .header .nav-link{
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 15px;
+            color: rgba(255, 255, 255, 0.308);
+        }
+        .header .login{
+            width: 5%;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+        .header .login:hover{
+            color: rgb(189, 235, 130);
+        }
+        .header .nav-link:hover{
+            color: white;
+            transition: .4s;
+        }
+        .header .nav-link i{
+            margin-left: 10px;
+        }
+        /* HEADER END */
+        
+        
+        /* MAIN START */
+
+        .main-con{
+            width: 100%;
+            height: 35vh;
+            border: 4px solid black;
+            background-image: url("back.jpg");
+            background-repeat: no-repeat;
+            background-size: 100vw;
+        }
+        .main-con .btn-con{
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .main-con .btn-con .mail{
+            width: 35%;
+            height: 50px;
+            border-radius: 4px;
+        }
+        .main-con .btn-con .btn{
+            width: 15%;
+            border-radius: 4px;
+            color: white;
+            background: rgb(93, 105, 209);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .main-con p{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 800;
+            font-style: oblique;
+        }
+        
+        /* MAIN END */
+
+        /* FOOTER START*/
+
+        .footer{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 70px;
+        }
+        .footer .con1{
+            width: 15%;
+            height: 100%;
+        }
+        .footer .con1 .logo{
+            display: flex;
+            font-size: 2em;
+        }
+        .footer .con2{
+            width: 15%;
+            height: 100%;
+        }
+        .footer .con3{
+            width: 15%;
+            height: 100%;
+        }
+        .footer .con4{
+            width: 15%;
+            height: 100%;
+        }
+        .footer .con5{
+            width: 35%;
+            height: 120%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+        }
+        .footer .con5-1{
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .footer .con5-2{
+            width: 30%;
+            height: 15%;
+            bottom: 100;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2.5em;
+        }
+        .footer .con5-2 i{
+            color: gray;
+        }
+        .footer .con2 a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.521);
+            font-size: 1.2em;
+            list-style: none;
+        }
+        .footer .con2 li{
+            margin-left: -40px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        .footer .con3 a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.521);
+            font-size: 1.2em;
+            list-style: none;
+        }
+        .footer .con3 li{
+            margin-left: -40px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        .footer .con4 a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.521);
+            font-size: 1.2em;
+            list-style: none;
+        }
+        .footer .con4 li{
+            margin-left: -40px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        .footer .con5-1 .mail{
+            width: 70%;
+            height: 100%;
+            padding-left: 15px;
+            font-size: 1em;
+            border-radius: 4px;
+        }
+        .footer .con5-1 .btn{
+            width: 28%;
+            height: 100%;
+            background: rgb(69, 83, 212);
+            font-size: 1.3em;
+            color: white;
+            font-weight: 500;
+            border-radius: 4px;
+        }
+        .footer .con5-1 .mail-hid{
+            width: 100%;
+            height: 30%;
+            justify-content: space-around;
+            display: flex;
+        }
+
+        /* FOOTER END*/
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="header-nav">
+            <div class="logo"><img width="70px" height="50px" src="hive.png" alt=""><h2>Hive</h2></div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <a class="nav-link" href=""><li>PRODUCT <i class="fa-solid fa-caret-down"></i></li></a>
+                    <a class="nav-link" href=""><li>PRICING</li></a>
+                    <a class="nav-link" href=""><li>USE CASES <i class="fa-solid fa-caret-down"></i></li></a>
+                    <a class="nav-link" href=""><li>CUSTOMERS</li></a>
+                    <a class="nav-link" href=""><li>RESOURCES <i class="fa-solid fa-caret-down"></i></li></a>
+                    <a class="nav-link" href=""><li>TRY HIVE <i class="fa-solid fa-caret-down"></i></li></a>
+                </ul>
+            </div>
+            <a class="login" href="">Log in</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-con">
+            <div class="btn-con">
+                <input class="mail" type="email" placeholder="name@company.com"><button class="btn">Get Started for Free</button>                
+            </div>
+            <p>Try it now for free. No credid card needed.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="con1">
+            <div class="logo"><img width="70px" height="60px" src="hive.png" alt=""><h2>Hive</h2></div>
+        </div>
+        <div class="con2">
+            <h2><b>HIVE</b></h2>
+            <ul>
+                <a href=""><li>Request Product Demo</li></a>
+                <a href=""><li>Knowledge Base</li></a>
+                <a href=""><li>Status</li></a>
+                <a href=""><li>Security</li></a>
+                <a href=""><li>Release Notes</li></a>
+                <a href=""><li>Developers</li></a>
+            </ul>  
+        </div>
+        <div class="con3">
+            <h2><b>About Us</b></h2>
+            <ul>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Press</li></a>
+                <a href=""><li>Careers</li></a>
+                <a href=""><li>Become A Partner</li></a>
+                <a href=""><li>Privacy Policy</li></a>
+                <a href=""><li>Terms of Service</li></a>
+                <a href=""><li>Google API Services User Data Policy</li></a>
+            </ul>
+        </div>
+        <div class="con4">
+            <h2><b>Compare</b></h2>
+            <ul>
+                <a href=""><li>Asana Alternative</li></a>
+                <a href=""><li>Wrike Alternative</li></a>
+                <a href=""><li>Smartsheet Alternative</li></a>
+                <a href=""><li>Jira Alternative</li></a>
+                <a href=""><li>Monday.com Alternative</li></a>
+                <a href=""><li>Trello Alternative</li></a>
+                <a href=""><li>Basecamp Alternative</li></a>
+                <a href=""><li>Workfront Alternative</li></a>
+            </ul>
+        </div>
+        <div class="con5">
+            <div class="con5-1">
+                <h2><b>Join our community</b></h2>
+                <p style="color: rgba(0, 0, 0, 0.521);">Enter your email address and subscribe to Hive News</p>
+                <div class="mail-hid">
+                    <input class="mail" type="email" placeholder="Email Address">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+            <div class="con5-2">
+                <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-square-twitter"></i><i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
