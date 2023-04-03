@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    padding: 0;
+    background: rgb(78, 0, 78);
+}
+.border{
+    border: 4px solid black;
+}
+.con1{
+    width: 90vw;
+    height: 100vh;
+    margin: 50px auto;
+    display: flex;
+    position: relative;
+}
+.con1 .sidecon{
+    width: 10%;
+    height: 100%;
+    background: white;
+}
+.con1 .hid11{
+    width: 100%;
+    height: 70%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+.con1 .hid12{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.con1 .hid123{
+    width: 2px;
+    height: 150px;
+    background: black;
+    margin-right: 10px;
+}
+.con1 .gatosp{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.con1 .circle-div1{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid gray;
+    font-size: 25px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con1 .circle-div12{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid gray;
+    font-size: 25px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con1 .maincon{
+    width: 90%;
+    height: 100%;
+    background: url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.header{
+    width: 95%;
+    height: 8%;
+    margin: 30px auto;
+}
+.header .header-nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: black;
+}
+.header .logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+    color: white;
+}
+.header .nav-menu{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .nav-list{
+    list-style: none;
+    display: flex;
+}
+.header .nav-link{
+    text-decoration: none;
+    font-size: 1em;
+    color: #4ab3bb;
+    margin-left: 25px;
+}
+.header .nav-link:hover{
+    position: relative;
+    color: white;
+}
+.header .nav-link:hover::after{
+    content: "";
+    background: white;            
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: 4px;
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+}
+.header .btn-con{
+    width: 25%;
+    height: 100%;
+    margin-right: -20px;
+    display: flex;
+    align-items: center;
+    background: #1174f7;
+}
+.header .btn1{
+    width: 100%;
+    height: 100%;
+    background: #1174f7;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header .btn-line{
+    width: 1px;
+    height: 50%;
+    background: white;
+}
+.maincon .search-con-hid{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maincon .search-con{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.maincon .search-text{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+}
+.maincon .search-btn-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.maincon .searchhid{
+    width: 75%;
+    height: 100%;
+    display: flex;
+}
+.maincon .searchhid1{
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+.maincon .searchhid2{
+    width: 35%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.maincon .search-line{
+    width: 2px;
+    height: 50px;
+    background: rgb(214, 194, 194);
+    
+}
+.maincon .input{
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+}
+.maincon .input1{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+}
+.maincon .fa-microphone{
+    position: absolute;
+    left: 0;
+    margin: 13px 10px;
+    font-size: 1.25em;
+    color: gray;
+}
+.maincon .fa-caret-down{
+    position: absolute;
+    right: 0;
+    font-size: 1.25em;
+    color: gray;
+    margin: 28px 10px;
+}
+
+.maincon .searchgive{
+    width: 23%;
+    height: 100%;
+    font-size: 1.1em;
+    font-weight: 650;
+    background: white;
+}
+.maincon2{
+    width: 90%;
+    height: 34.8%;
+    margin-left: 220px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.maincon2 .top-text{
+    width: 30%;
+    height: 100%;
+    color: white;
+    padding: 30px 150px;
+    margin-top: 70px;
+}
+.maincon2 .top-text>p{
+    color: gray;
+    margin-top: 30px;
+}
+.maincon2 .top-img{
+    width: 70%;
+    height: 100%; 
+    display: flex;
+}
+.maincon2 .img1{
+    width: 26%;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 80px;
+    position: relative;
+    background: purple;
+}
+.maincon2 .imgview{
+    width: 100%;
+    height: 50%;
+}
+.maincon2 .imgtitle{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 128px;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.maincon2 .imgtitle-bright{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 170px;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.maincon2 .imgtext{
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+}
+.maincon2 .hiddiv1{
+    margin-top: 10px;
+}
+.maincon2 .hiddiv3{
+    margin-top: 50px;
+}
+.maincon2 .films-min{
+    font-size: 0.7em;
+    color: gray;
+}
+.maincon2 .paragraph{
+    color: gray;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.maincon2 .hiddendiv{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+.maincon2 .allmovies{
+    width: 7.5%;
+    height: 101%;
+    margin-left: 15px;
+    margin-top: 77px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1174f7;
+    color: white;
+    font-size: 1em;
+}
+.maincon2 .circle-div{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid white;
+}
+.maincon2 .fa-arrow-left{
+    color: white;
+}
